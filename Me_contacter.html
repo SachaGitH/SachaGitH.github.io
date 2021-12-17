@@ -1,29 +1,3 @@
-<?php 
-
-
-if(isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['email']) && isset($_POST['message'])) {
-
-try {
-
-$bdd = new PDO("mysql:host=localhost; dbname=portfolio; charset=utf8", "root", "");
-
-} catch(Excpetion $e) {
-  die($e->getMessage());
-}
-
-
-$requete = $bdd->prepare('INSERT INTO formulaire(prenom, nom, adressemail, message) VALUES(?, ?, ?, ?)');
-
-$requete->execute(array($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['message']));
-
-  echo "Votre message à bien été envoyé, merci de votre attention";
-
-
-}
-
-
-?>
-
 <!DOCTYPE html>
 
 <html lang="fr-FR">
@@ -46,7 +20,7 @@ $requete->execute(array($_POST['firstname'], $_POST['lastname'], $_POST['email']
     <div class="lienDroit" >
     <p><a class="bandeau" href="Qui_suis_je.html"><b> QUI SUIS-JE ?</b></a></p><!--lien vers qui suis-je-->
     <p><a class="bandeau" href="Compétence.html"><b> COMPÉTENCES</b></a></p><!--lien vers Compétence-->
-    <p><a class="bandeau" href="Me_contacter.php"><b> ME CONTACTER</b></a></p><!--lien vers me contacter-->
+    <p><a class="bandeau" href="Me_contacter.html"><b> ME CONTACTER</b></a></p><!--lien vers me contacter-->
     </div>
   </header>
 	<!--<p>Pour m'envoyez un mail cliquez ici <a href="mailto:sacha.vannier.contacte@gmail.com">Mail</a></p>lien vers l'envoi de mail-->
@@ -67,7 +41,7 @@ $requete->execute(array($_POST['firstname'], $_POST['lastname'], $_POST['email']
                 
         <div class="form-wrapper">
         
-         <form action="Me_contacter.php" method="POST" id="contactForm" name="contactForm">
+         <form action="Me_contacter.html" method="POST" id="contactForm" name="contactForm">
            
             <div class="name-block">
             <input type="text" class="first-name input-field" maxlength="256" name="firstname" placeholder="Prenom" required=""  >
