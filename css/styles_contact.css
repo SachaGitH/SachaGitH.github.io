@@ -1,0 +1,112 @@
+
+
+.user-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-heading {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;
+}
+
+.contact-heading h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #F5B67A;
+    font-size: 45px;
+    line-height: 125%;
+    font-weight: 700;
+}
+
+.contact-heading p {
+    color: #F5B67A;
+    font-size: 25px;
+    line-height: 140%;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+.form-wrapper {
+    margin: 0 0 15px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #F5B67A;
+    border-radius: 8px;
+}
+
+.input-field {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: black;
+    border: 1px solid #F5B67A;
+    border-radius: 5px;
+    padding: 25px 10px 25px 25px;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
+    transition: all 400ms linear;
+}
+
+.input-field:focus {
+    outline: 0;
+    border: 1px solid #F5B67A;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+}
+
+.input-field:placeholder {
+    color: saddlebrown;
+    font-weight: 300;
+}
+
+.input-field.message {
+    min-height: 150px;
+    padding-top: 15px
+}
+
+.name-block {
+    display: flex;
+}
+
+.first-name {
+    margin-left: 5px;
+}
+
+.last-name {
+     margin-left: 5px ;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #F5B67A;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #6f6f6f;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 400ms linear;
+}
+
+.contact-btn:hover {
+    background-color: #F5B67A;
+    color: #fff;
+}

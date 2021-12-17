@@ -1,0 +1,553 @@
+/*comantaire css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{ /*instruction pour tt le code*/
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+
+}
+
+div.lienDroit{
+	margin: 0%;
+	display: inline;
+	text-align: right;
+
+}
+
+div.lienDroit p{
+	margin: 15px;
+	display: inline-block;
+
+}
+
+
+
+a.bandeau{ /*style des liens dans le bandeau*/
+	text-decoration: none;
+	color: grey; 
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+    text-transform: uppercase;
+    front-weight: bold;
+}
+a.bandeau:hover{ /*style des liens dans le bandeau quand on passe la souris*/
+	text-decoration: none;
+	color: black;
+}
+
+a.lien-doc{ /*style des liens dans le bas de la page avant le footer*/
+	text-decoration: none;
+	color: black; 
+	margin-right: 80px;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+
+a.lien-doc:hover{ /*style des liens dans le bandeau quand on passe la souris*/
+	text-decoration: none;
+	color: grey;
+}
+
+
+
+a.folio{ /*style des liens dans le bandeau*/
+	text-decoration: none;
+	color: black; 
+	margin: 5%;
+}
+
+a.folio:hover{ /*style du lien du folio quand on passe la souris*/
+	text-decoration: none;
+	color: grey;
+}
+
+h1.folio{ /*Mon portfoliot en haut a gauche*/
+	justify-content: left;
+	margin-right: 38%;
+	margin-top: 1.7%;
+	margin-bottom: 1.7%;
+	font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 100;
+
+}
+
+h1.NOM{ /*Mon portfoliot en haut a droit*/
+	justify-content: left;
+	margin-right: 10%;
+	font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 100;
+
+}
+
+
+
+
+
+
+header.p1{ /*style du bandeau*/
+	display: flex;
+	flex-wrap: warp;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-bottom: 5px solid grey;
+
+
+
+}
+
+
+
+#background{  /*image de fond*/
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("img/colore/pcb.jpg");
+	height: 950px; 
+	width: 100%;
+	justify-content:center ;
+	align-items: center;
+	background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-bottom: 2px solid grey;
+
+
+ 
+}
+
+#logo{ /*logo du bandeau*/
+
+	background-image: url("img/logo site.ico");
+	background-size: 70px;
+	height: 80px; 
+	width: 80px;
+	padding: all;
+	justify-content:center ;
+	background-repeat: no-repeat;
+	background-position: center center;
+	align-items: center;
+}
+
+
+section.p1{ /*style du bandeau du milieu*/
+	background-color: white;
+	display: flex;
+	flex-wrap: warp;
+	justify-content: center;
+	align-items: center;
+
+
+}
+footer{ /*style du bandeau du bas*/
+	background-color: #DFDFDF;
+	display: flex;
+	border-top: 2px solid grey;
+	flex-wrap: warp;
+	align-items: center;
+	
+	
+}
+
+
+
+p{/*style des text des pages*/
+
+	font-weight: 500;
+	font-family: Raleway;
+	font-size: 17px;
+	line-height: 2em;
+	text-align: justify;
+
+}
+
+
+h3{/*style du sous-titre */
+
+	font-family: Raleway; 
+	font-size: 25px;
+
+	}
+
+
+
+
+.myButton1 { /*bouton pour monter*/
+	margin: 50px;
+	align-items: center;
+	background:linear-gradient(to bottom, #959494 100%);
+	background-color:#959494;
+	display:inline-block;
+	color:#ffffff;
+	border: 1px solid #959494;
+	border-radius: 7px;
+	font-family:Raleway;
+	font-size:28px;
+	padding:7px 15px;
+	text-decoration:none;
+
+}
+.myButton1:hover {
+
+	background:linear-gradient(to bottom, #959494 100%);
+	background-color:#959494;
+	text-decoration: none;
+	color: black;
+}
+.myButton1:active {
+	position:relative;
+	top:2px;
+
+}
+
+
+
+h1.txttitre{/*Titre non mouvent de la p1*/
+	color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 120px;
+    font-weight: 500;
+	font-family: Raleway;
+	text-shadow: 2px 0 0 black, 2px 2px 0 black, 0 2px 0 black, -2px 2px 0 black, -2px 0 0 black, -2px -2px 0 black, 0 -2px 0 black, 2px -2px 0 black;
+
+}
+
+p.bas_de_page{/*css de l'e-mail*/
+
+	font-weight: 500;
+	font-family: Raleway;
+	font-size: 15px;
+	justify-content: safe left;
+	margin: 50px;
+}
+
+
+
+p.bas_de_page2{/*css de Copyright*/
+
+	font-weight: 550;
+	font-family: Raleway;
+	font-size: 17px;
+	margin-left: 35%;
+}
+
+#Qui-suis-je{ 
+	background-image:url("img/colore/bandeau.jpg");
+	display: flex;
+	flex-wrap: warp;
+	align-items: center;
+	justify-content: center;
+	border-bottom:  2px solid grey;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+#ME_CONTACTER{
+	background-image:url("img/colore/contacter3.jpg");
+	display: flex;
+	flex-wrap: warp;
+	align-items: center;
+	justify-content: center;
+	border-bottom:  2px solid grey;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+
+
+
+
+
+
+div.txt{
+	margin: 5%;
+	margin-right: 13%;
+	margin-left: 13%;
+
+
+}
+
+
+
+h1.titre{
+	margin-top: 70px;
+	margin-bottom: 70px;
+	color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: 500;
+	font-family: Raleway;
+	text-shadow: 2px 0 0 black, 2px 2px 0 black, 0 2px 0 black, -2px 2px 0 black, -2px 0 0 black, -2px -2px 0 black, 0 -2px 0 black, 2px -2px 0 black;"
+}
+
+/*style des barres de pourcentage de la fiche compétence*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
+:root {
+    --body-font: 'Poppins', sans-serif;
+}
+
+* {
+    font-family: var(--body-font);
+}
+
+.single-progressbar .title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.single-progressbar {
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card .card-header .title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.card .card-body code {
+    background-color: #efecec;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.header .title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.header .title::first-letter {
+    color: #fc4444;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+ul.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+}
+
+ul.menu li {
+    display: inline-block;
+}
+
+ul.menu li a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 500ms;
+    text-decoration: none;
+}
+
+ul.menu li a:hover {
+    color: #fc4444;
+}
+
+ul.menu li+li {
+    margin-left: 25px;
+}
+
+.progressbar{
+    width: 100%;
+    margin-top: 5px; 
+    margin-bottom: 25px; 
+    position: relative; 
+    background-color: #f4f4f4;
+    }
+
+.proggress{
+    height: 8px;
+    width: 10px; 
+    background-color: #ff0;
+    }
+
+.percentCount{
+    float: right; 
+    margin-top: -42px; 
+    clear: both; 
+    font-weight: 700; 
+    font-size: 13px; 
+    color: #777777;
+    }
+
+#COMPÉTENCES{ 
+	background-image:url("img/colore/bandeau-competence.jpg");
+	display: flex;
+	flex-wrap: warp;
+	align-items: center;
+	justify-content: center;
+	border-bottom:  2px solid grey;
+	margin-bottom: 150px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#Footer_COMPÉTENCES{
+	margin-top: 100px;
+	background-color: #DFDFDF;
+	display: flex;
+	border-top: 2px solid grey;
+	flex-wrap: warp;
+	align-items: center;
+}
+
+
+
+
+a.Copy{
+	text-decoration: none;
+	color: black;
+	justify-content:safe right;
+
+
+}
+
+a.Copy:hover{
+	text-decoration: none;
+	color: black;
+
+}
+
+
+
+.user-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-heading {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;
+}
+
+.contact-heading h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #959494;
+    font-size: 45px;
+    line-height: 125%;
+    font-weight: 700;
+}
+
+.contact-heading p {
+	font-family: Raleway;
+    color: black;
+    font-size: 25px;
+    line-height: 140%;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+.form-wrapper {
+    margin: 0 0 15px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #959494;
+    border-radius: 8px;
+}
+
+.input-field {
+    display: block;
+    background-color: #fff;
+    width: 93%;
+    height: 38px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: black;
+    border: 1px solid #959494;
+    border-radius: 5px;
+    padding: 25px 10px 25px 25px;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
+    transition: all 400ms linear;
+}
+
+.input-field:focus {
+    outline: 0;
+    border: 1px solid #959494;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+}
+
+.input-field:placeholder {
+    color: saddlebrown;
+    font-weight: 300;
+}
+
+.input-field.message {
+    min-height: 150px;
+    padding-top: 15px
+}
+
+.name-block {
+    display: flex;
+}
+
+.first-name {
+    margin-left: 5px;
+}
+
+.last-name {
+     margin-left: 5px ;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #959494;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #6f6f6f;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 400ms linear;
+}
+
+.contact-btn:hover {
+    background-color: #959494;
+    color: #fff;
+}
