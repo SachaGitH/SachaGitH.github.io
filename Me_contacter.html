@@ -1,3 +1,29 @@
+<?php
+
+    if (isset($_POST['firstname']) && isset($_POST['lastname'])  && isset($_POST['email'])  && isset($_POST['message'])) {
+        $to = 'sacha.vannier.contacte@gmail.com';
+        $subject = 'Message provenant du formulaire de contact';
+        $message = '<html>
+                            <body>
+                                <h5>Adresse mail : '.$_POST['email'].'</h5>
+                                <h5>Prenom : '.$_POST['firstname'].'<br> Nom : '.$_POST['lastname'].'</h5>
+                                <p>Message : <br> '.$_POST['message'].'</p>
+                            </body>
+                        </html>';
+
+
+        $headers[] = 'MIME-Version: 1.0';
+        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+        $headers[] = 'Content-Transfer-Encoding: 8bit';
+        $headers[] = 'FROM: monportfolio@monsite.fr';
+
+        mail($to, $subject, $message, implode("\r\n", $headers));
+    }
+
+
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="fr-FR">
